@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .wizard-step {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .platform-card {
+    @apply border-2 border-gray-200 rounded-lg p-4 cursor-pointer transition-all duration-200 hover:border-blue-300 hover:shadow-md;
+  }
+  
+  .platform-card.selected {
+    @apply border-blue-500 bg-blue-50;
+  }
+  
+  .tool-option {
+    @apply flex items-center space-x-3 p-3 rounded-lg border border-gray-200 cursor-pointer transition-all duration-200 hover:bg-gray-50;
+  }
+  
+  .tool-option.selected {
+    @apply bg-blue-50 border-blue-300;
+  }
+  
+  .progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2;
+  }
+  
+  .progress-fill {
+    @apply bg-blue-500 h-2 rounded-full transition-all duration-300;
+  }
+}
