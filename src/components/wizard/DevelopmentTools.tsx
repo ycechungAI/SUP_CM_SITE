@@ -243,15 +243,19 @@ const DevelopmentTools: React.FC<DevelopmentToolsProps> = ({ data, onUpdate, onN
       </div>
 
       {/* Selected Tools Summary */}
-      {getSelectedToolsCount() > 0 && (
+      {getSelectedToolsCount() > 0 ? (
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <h5 className="font-medium text-blue-900 mb-2">Selected Tools Summary</h5>
           <p className="text-blue-700 text-sm">
             {getSelectedToolsCount()} tools selected for your development environment
           </p>
-          <div className="text-xs text-blue-600 mt-1">
+        </div>
+      ) : (
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <h5 className="font-medium text-blue-900 mb-2">Selected Tools Summary</h5>
+          <p className="text-blue-700 text-sm">
             No tools selected
-          </div>
+          </p>
         </div>
       )}
 

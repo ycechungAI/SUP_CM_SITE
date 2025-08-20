@@ -24,7 +24,7 @@ const PlatformSelection: React.FC<PlatformSelectionProps> = ({ data, onUpdate, o
       description: 'Supports apt, yum, and other native package managers',
       icon: '🐧',
       supported: true,
-      features: ['Ubuntu, CentOS, Fedora supported', 'Windows 10/11 supported']
+      features: ['Ubuntu, CentOS, Fedora supported']
     },
     {
       id: 'windows',
