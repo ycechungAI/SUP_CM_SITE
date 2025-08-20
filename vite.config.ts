@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/SUP_CM/',
   build: {
-    outDir: 'dist',
+    outDir: 'public',
     assetsDir: 'assets'
   }
 })
